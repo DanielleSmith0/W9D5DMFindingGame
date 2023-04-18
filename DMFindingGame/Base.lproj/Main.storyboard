@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cLM-BX-Ev8">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Finding Game View Controller-->
+        <scene sceneID="uBD-Ng-N4y">
+            <objects>
+                <viewController id="cLM-BX-Ev8" customClass="DMFindingGameViewController" customModule="DMFindingGame" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8ZV-5E-ebi">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvG-KV-4BN">
+                                <rect key="frame" x="341" y="57" width="16" height="24"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
+                                <color key="textColor" red="0.23529411764705882" green="0.28235294117647058" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLR-po-28b">
+                                <rect key="frame" x="179.66666666666666" y="148" width="30.666666666666657" height="65"/>
+                                <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="50"/>
+                                <color key="textColor" red="0.23529411764705882" green="0.28235294117647058" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="wwB-Wd-3AG">
+                                <rect key="frame" x="31" y="247" width="328" height="350"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Rny-Q7-auU">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AD-gL-DDt">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="90"/>
+                                                <color key="backgroundColor" red="0.23529411759999999" green="0.28235294119999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="I">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
+                                                    <color key="baseForegroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="compareLetters:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="h4u-a4-reO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4T-0j-9q5">
+                                                <rect key="frame" x="91" y="0.0" width="55" height="90"/>
+                                                <color key="backgroundColor" red="0.23529411759999999" green="0.28235294119999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="E">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
+                                                    <color key="baseForegroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="compareLetters:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="loM-EF-k1N"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qj-Ag-XA8">
+                                                <rect key="frame" x="182" y="0.0" width="55" height="90"/>
+                                                <color key="backgroundColor" red="0.23529411759999999" green="0.28235294119999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="L">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
+                                                    <color key="baseForegroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="compareLetters:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="HMJ-M3-yRo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOC-3Z-kUl">
+                                                <rect key="frame" x="273" y="0.0" width="55" height="90"/>
+                                                <color key="backgroundColor" red="0.23529411759999999" green="0.28235294119999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="B">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
+                                                    <color key="baseForegroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="compareLetters:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="u0s-7d-hVe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="t1Q-cj-y7m">
+                                        <rect key="frame" x="0.0" y="130" width="328" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUF-yN-prP">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="90"/>
+                                                <color key="backgroundColor" red="0.23529411759999999" green="0.28235294119999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Y">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
+                                                    <color key="baseForegroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="compareLetters:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="XkX-3c-P7C"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7o-6B-hYP">
+                                                <rect key="frame" x="91" y="0.0" width="55" height="90"/>
+                                                <color key="backgroundColor" red="0.23529411759999999" green="0.28235294119999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="G">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
+                                                    <color key="baseForegroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="compareLetters:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Wh6-9j-NB7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4k-7K-edE">
+                                                <rect key="frame" x="182" y="0.0" width="55" height="90"/>
+                                                <color key="backgroundColor" red="0.23529411759999999" green="0.28235294119999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="N">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
+                                                    <color key="baseForegroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="compareLetters:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="PqT-FK-ajl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoY-vh-o3L">
+                                                <rect key="frame" x="273" y="0.0" width="55" height="90"/>
+                                                <color key="backgroundColor" red="0.23529411759999999" green="0.28235294119999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="K">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
+                                                    <color key="baseForegroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="compareLetters:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="8bw-ZY-BrI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="i7U-WR-knd">
+                                        <rect key="frame" x="0.0" y="260" width="328" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGq-Km-sQr">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="90"/>
+                                                <color key="backgroundColor" red="0.23529411764705882" green="0.28235294117647058" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="F">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
+                                                    <color key="baseForegroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="compareLetters:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Gdv-LQ-bMD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9Q-H7-Dya">
+                                                <rect key="frame" x="91" y="0.0" width="55" height="90"/>
+                                                <color key="backgroundColor" red="0.23529411759999999" green="0.28235294119999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="P">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
+                                                    <color key="baseForegroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="compareLetters:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="tzP-RG-ffD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUV-wM-vW2">
+                                                <rect key="frame" x="182" y="0.0" width="55" height="90"/>
+                                                <color key="backgroundColor" red="0.23529411759999999" green="0.28235294119999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="T">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
+                                                    <color key="baseForegroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="compareLetters:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="M12-Hh-hdz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOg-eB-sda">
+                                                <rect key="frame" x="273" y="0.0" width="55" height="90"/>
+                                                <color key="backgroundColor" red="0.23529411759999999" green="0.28235294119999998" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="S">
+                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="40"/>
+                                                    <color key="baseForegroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="compareLetters:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="mBQ-z4-EdW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="TfY-YO-Nul"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8bc-M0-il6"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.74901960784313726" green="0.80000000000000004" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8bc-M0-il6" firstAttribute="trailing" secondItem="AvG-KV-4BN" secondAttribute="trailing" constant="33" id="BA1-si-7h4"/>
+                            <constraint firstItem="AvG-KV-4BN" firstAttribute="top" secondItem="8bc-M0-il6" secondAttribute="top" constant="10" id="L3d-HL-qJm"/>
+                            <constraint firstItem="wwB-Wd-3AG" firstAttribute="centerX" secondItem="8ZV-5E-ebi" secondAttribute="centerX" id="Ug8-FM-t0a"/>
+                            <constraint firstItem="OLR-po-28b" firstAttribute="top" secondItem="8bc-M0-il6" secondAttribute="top" constant="101" id="lU6-qS-nLI"/>
+                            <constraint firstItem="OLR-po-28b" firstAttribute="centerX" secondItem="8ZV-5E-ebi" secondAttribute="centerX" id="urs-Up-HBy"/>
+                            <constraint firstItem="wwB-Wd-3AG" firstAttribute="centerY" secondItem="8ZV-5E-ebi" secondAttribute="centerY" id="vlL-jK-0vn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="AvG-KV-4BN" id="VzI-x0-rbb"/>
+                        <outlet property="targetLetterLabel" destination="OLR-po-28b" id="B22-1s-Ukf"/>
+                        <outletCollection property="letterButtons" destination="uGq-Km-sQr" collectionClass="NSMutableArray" id="2f0-wK-whG"/>
+                        <outletCollection property="letterButtons" destination="x9Q-H7-Dya" collectionClass="NSMutableArray" id="02l-WZ-fH9"/>
+                        <outletCollection property="letterButtons" destination="uUV-wM-vW2" collectionClass="NSMutableArray" id="l8e-b8-Qe4"/>
+                        <outletCollection property="letterButtons" destination="mOg-eB-sda" collectionClass="NSMutableArray" id="r7M-8x-frx"/>
+                        <outletCollection property="letterButtons" destination="fUF-yN-prP" collectionClass="NSMutableArray" id="IIV-36-nA9"/>
+                        <outletCollection property="letterButtons" destination="T7o-6B-hYP" collectionClass="NSMutableArray" id="C4h-VR-ziI"/>
+                        <outletCollection property="letterButtons" destination="u4k-7K-edE" collectionClass="NSMutableArray" id="X0M-8R-o3k"/>
+                        <outletCollection property="letterButtons" destination="zoY-vh-o3L" collectionClass="NSMutableArray" id="b7v-7g-ZBe"/>
+                        <outletCollection property="letterButtons" destination="8AD-gL-DDt" collectionClass="NSMutableArray" id="Uif-3q-C6p"/>
+                        <outletCollection property="letterButtons" destination="P4T-0j-9q5" collectionClass="NSMutableArray" id="uiV-Km-jnE"/>
+                        <outletCollection property="letterButtons" destination="9Qj-Ag-XA8" collectionClass="NSMutableArray" id="Fgf-0d-1kz"/>
+                        <outletCollection property="letterButtons" destination="AOC-3Z-kUl" collectionClass="NSMutableArray" id="M29-6J-wae"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b22-Od-7or" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.53846153846153" y="-9.24170616113744"/>
+        </scene>
+    </scenes>
+</document>
